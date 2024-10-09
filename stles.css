@@ -77,38 +77,94 @@ nav ul li a:hover {
     text-shadow: 2px 2px 5px #333;
 }
 
-.tagline {
-    font-size: 18px;
-    color: #666;
+.church-slogan {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
 }
 
-.gallery-section {
-    text-align: center;
+.ministry-section {
     padding: 50px 20px;
 }
 
-.gallery-section h2 {
-    font-size: 30px;
+.ministry-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.ministry-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.ministry-card h3 {
+    font-size: 24px;
     color: #FF7F00;
+    margin-bottom: 10px;
+}
+
+.events-section {
+    padding: 50px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #FF7F00;
+    color: #fff;
+}
+
+.gallery-section {
+    padding: 50px 20px;
 }
 
 .gallery {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .gallery img {
-    width: 300px;
-    height: auto;
-    border: 2px solid #FF7F00;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
+}
+
+.worship-section {
+    padding: 50px 20px;
+}
+
+.worship-section table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.worship-section th, .worship-section td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.worship-section th {
+    background-color: #FF7F00;
+    color: #fff;
 }
 
 .info-section {
@@ -127,22 +183,6 @@ nav ul li a:hover {
 .info-section p {
     font-size: 18px;
     color: #333;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #FF7F00;
-    color: #fff;
 }
 
 footer {
